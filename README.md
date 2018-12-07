@@ -1,7 +1,7 @@
 # conkify
 Conky setup for showing Spotify album artwork on the desktop
 
-## Dependnecies
+## Dependencies
 
 * bash
 * wget
@@ -15,3 +15,7 @@ Simply copy the contents of the repo to $HOME/.conky, ensure Spotify is running,
 ```
 $ conky -c $HOME/.conky/conkyrc
 ```
+
+## Screenshot
+
+![screenshot_1](https://i.imgur.com/iclG5Kv.jpg)
