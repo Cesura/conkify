@@ -1,0 +1,37 @@
+conky.config = {
+    use_xft = true,
+    xftalpha = 0.8,
+    update_interval = 1.0,
+    total_run_times = 0,
+    own_window = true,
+
+    own_window_type = 'normal',
+    own_window_class = 'conky-semi',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    background = false,
+    double_buffer = true,
+    imlib_cache_size = 0,
+    no_buffers = true,
+    uppercase = false,
+    cpu_avg_samples = 2,
+    override_utf8_locale = true,
+ 
+    -- placement
+    alignment = 'bottom_right',
+    gap_x = 40,
+    gap_y = 40,
+ 
+    -- default drawing
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = false,
+
+    minimum_width = 287,
+    minimum_height = 287,
+};
+ 
+conky.text = [[
+    ${exec $HOME/.conky/update-art.sh}
+    ${image $HOME/.conky/latest.jpg -p -2,-2 -s 300x300}
+]];
